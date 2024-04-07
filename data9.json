@@ -1,0 +1,12 @@
+{
+    "data": [],
+    "meta": {
+        "record_count": 762,
+        "page_count": 8
+    },
+    "links": {
+        "first": "https://data.g2.com/api/v1/survey-responses?page%5Bnumber%5D=1&page%5Bsize%5D=100",
+        "prev": "https://data.g2.com/api/v1/survey-responses?page%5Bnumber%5D=8&page%5Bsize%5D=100",
+        "last": "https://data.g2.com/api/v1/survey-responses?page%5Bnumber%5D=8&page%5Bsize%5D=100"
+    }
+}
