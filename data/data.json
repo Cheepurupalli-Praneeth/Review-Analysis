@@ -1,0 +1,237 @@
+{
+    "data": [
+        {
+            "id": "18532",
+            "type": "survey_responses",
+            "links": {
+                "self": "https://data.g2.com/api/v1/survey-responses/18532"
+            },
+            "attributes": {
+                "default_sort": 1.2710259698084911,
+                "product_name": "G2 Marketing Solutions",
+                "is_public": true,
+                "slug": "g2-marketing-solutions-review-18532",
+                "percent_complete": 0.9545454545454546,
+                "star_rating": 4.5,
+                "title": "G2 helps market and customer validity",
+                "comment_answers": {
+                    "love": {
+                        "text": "What do you like best about the product?",
+                        "value": "G2 has helped our customers publicly validate us to prospects and has helped us build pipeline and be considered for opportunities where we likely would not have been found otherwise. Also it has aided as a great validation point for customers in meetings and demo's as to our market profile and position.  It has helped us need less reference calls and enabled our customers to have a more open and valid place to voice their opinion on us."
+                    },
+                    "hate": {
+                        "text": "What do you dislike about the product?",
+                        "value": "Not a lot to dislike.  Be great as G2 becomes more recognised by a wider audience and gives the Gartners a run for their money. "
+                    }
+                },
+                "secondary_answers": {
+                    "ease_of_doing_business_with": {
+                        "text": "Has the product been a good partner in doing business?",
+                        "value": 7.0
+                    }
+                },
+                "verified_current_user": false,
+                "is_business_partner": false,
+                "review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
+                "votes_up": 1,
+                "votes_down": 0,
+                "votes_total": 1,
+                "user_id": "6118c789-70c2-4b0d-87b4-e147de083f6f",
+                "user_name": "Ian Moyse ☑",
+                "user_image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQEB0w20dINt2w/profile-displayphoto-shrink_100_100/0/1618741141941?e=1643241600&v=beta&t=6LP_rZ1XaX0sMx35XSsF8SNY7sLIdrjeApwCtuePXNA",
+                "country_name": "United Kingdom",
+                "regions": [
+                    "EMEA",
+                    "Europe"
+                ],
+                "submitted_at": "2013-12-06T08:51:22.236-06:00",
+                "updated_at": "2013-12-06T08:51:22.236-06:00",
+                "moderated_at": null,
+                "product_id": "a7d324a4-06eb-4be2-ad8e-65938bce5fd5",
+                "reference_user_consent": "unanswered",
+                "status": "approved"
+            },
+            "relationships": {
+                "product": {
+                    "links": {
+                        "self": "https://data.g2.com/api/v1/survey-responses/18532/relationships/product",
+                        "related": "https://data.g2.com/api/v1/survey-responses/18532/product"
+                    }
+                },
+                "questions": {
+                    "links": {
+                        "self": "https://data.g2.com/api/v1/survey-responses/18532/relationships/questions",
+                        "related": "https://data.g2.com/api/v1/survey-responses/18532/questions"
+                    }
+                },
+                "answers": {
+                    "links": {
+                        "self": "https://data.g2.com/api/v1/survey-responses/18532/relationships/answers",
+                        "related": "https://data.g2.com/api/v1/survey-responses/18532/answers"
+                    }
+                }
+            }
+        },
+        {
+            "id": "67896",
+            "type": "survey_responses",
+            "links": {
+                "self": "https://data.g2.com/api/v1/survey-responses/67896"
+            },
+            "attributes": {
+                "default_sort": 2.5346166321766437,
+                "product_name": "G2 Marketing Solutions",
+                "is_public": true,
+                "slug": "g2-marketing-solutions-review-67896",
+                "percent_complete": 0.9230769230769231,
+                "star_rating": 4.5,
+                "title": "Recommended for gaining visibility in B2B Marketing efforts ",
+                "comment_answers": {
+                    "love": {
+                        "text": "What do you like best about the product?",
+                        "value": "It showcases a wide range of vendors with unbiased and helpful reviews for evaluating solutions within your organization. This helps companies accelerate their marketing efforts and sales cycles when shared effectively. \r\n\r\nThe smart grid is also a really great way to show how your company is perceived in the market place.\r\n\r\nQuarterly reports are very detailed and are helpful overviews for companies trying to evaluate vendors. "
+                    },
+                    "hate": {
+                        "text": "What do you dislike about the product?",
+                        "value": "There aren't enough people open to reviewing products without an incentive. I still think that reviewers are honest and unbiased, but the volume is still much lower than you'd expect. \r\n\r\nIt is costly, but we saw an ROI within weeks of launching our paid subscription with closing a relatively large deal through a lead that came in via G2Crowd. "
+                    },
+                    "recommendations": {
+                        "text": "Recommendations to others considering the product:",
+                        "value": "Learn more about best practices and ways to leverage their platform. It helped us gain a lot of visibility in the market and respect amongst our customers. "
+                    }
+                },
+                "secondary_answers": {
+                    "ease_of_doing_business_with": {
+                        "text": "Has the product been a good partner in doing business?",
+                        "value": 6.0
+                    }
+                },
+                "verified_current_user": false,
+                "is_business_partner": true,
+                "review_source": "Invitation from G2. This reviewer was offered a nominal gift card as thank you for completing this review.",
+                "votes_up": 0,
+                "votes_down": 0,
+                "votes_total": 0,
+                "user_id": "ecf99a0c-5438-463f-afc1-24f1511b2a62",
+                "user_name": "Dakota McKenzie",
+                "user_image_url": "https://images.g2crowd.com/uploads/avatar/image/587484/thumb_square_9507df9ec1b62fd92e567637b73d20dc.jpeg",
+                "country_name": "United States",
+                "regions": [
+                    "Americas",
+                    "North America"
+                ],
+                "submitted_at": "2015-10-26T10:55:33.637-05:00",
+                "updated_at": "2015-10-26T10:55:34.284-05:00",
+                "moderated_at": null,
+                "product_id": "a7d324a4-06eb-4be2-ad8e-65938bce5fd5",
+                "reference_user_consent": "unanswered",
+                "status": "approved"
+            },
+            "relationships": {
+                "product": {
+                    "links": {
+                        "self": "https://data.g2.com/api/v1/survey-responses/67896/relationships/product",
+                        "related": "https://data.g2.com/api/v1/survey-responses/67896/product"
+                    }
+                },
+                "questions": {
+                    "links": {
+                        "self": "https://data.g2.com/api/v1/survey-responses/67896/relationships/questions",
+                        "related": "https://data.g2.com/api/v1/survey-responses/67896/questions"
+                    }
+                },
+                "answers": {
+                    "links": {
+                        "self": "https://data.g2.com/api/v1/survey-responses/67896/relationships/answers",
+                        "related": "https://data.g2.com/api/v1/survey-responses/67896/answers"
+                    }
+                }
+            }
+        },
+        {
+            "id": "177131",
+            "type": "survey_responses",
+            "links": {
+                "self": "https://data.g2.com/api/v1/survey-responses/177131"
+            },
+            "attributes": {
+                "default_sort": 2.8232746888863036,
+                "product_name": "G2 Marketing Solutions",
+                "is_public": true,
+                "slug": "g2-marketing-solutions-review-177131",
+                "percent_complete": 0.42857142857142855,
+                "star_rating": 4.5,
+                "title": "Credibility",
+                "comment_answers": {
+                    "love": {
+                        "text": "What do you like best about the product?",
+                        "value": "Great way to build our brand in a new space, by leveraging user success. Also, Alex Pike did a great job of helping us understand the value of the platform when we first started."
+                    },
+                    "hate": {
+                        "text": "What do you dislike about the product?",
+                        "value": "So far so good, we are just starting to use additional features like the LinkedIn integration so can't evaluate that yet"
+                    },
+                    "benefits": {
+                        "text": "What problems is the product solving and how is that benefiting you?",
+                        "value": "Building our brand and business through more exposure and inbound leads."
+                    }
+                },
+                "secondary_answers": {
+                    "ease_of_doing_business_with": {
+                        "text": "Has the product been a good partner in doing business?",
+                        "value": 7.0
+                    }
+                },
+                "verified_current_user": false,
+                "is_business_partner": true,
+                "review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
+                "votes_up": 0,
+                "votes_down": 0,
+                "votes_total": 0,
+                "user_id": "18c7b72b-467b-4119-9be9-0e0486ee35e4",
+                "user_name": "Paul McGhee",
+                "user_image_url": "https://images.g2crowd.com/uploads/avatar/image/321856/thumb_square_3afbacd056aa0bf9ccd0a74f93b3f247.jpeg",
+                "country_name": "United States",
+                "regions": [
+                    "Americas",
+                    "North America"
+                ],
+                "submitted_at": "2016-10-06T14:50:59.131-05:00",
+                "updated_at": "2016-10-06T14:50:59.164-05:00",
+                "moderated_at": "2016-10-08T14:32:11.744-05:00",
+                "product_id": "a7d324a4-06eb-4be2-ad8e-65938bce5fd5",
+                "reference_user_consent": "unanswered",
+                "status": "approved"
+            },
+            "relationships": {
+                "product": {
+                    "links": {
+                        "self": "https://data.g2.com/api/v1/survey-responses/177131/relationships/product",
+                        "related": "https://data.g2.com/api/v1/survey-responses/177131/product"
+                    }
+                },
+                "questions": {
+                    "links": {
+                        "self": "https://data.g2.com/api/v1/survey-responses/177131/relationships/questions",
+                        "related": "https://data.g2.com/api/v1/survey-responses/177131/questions"
+                    }
+                },
+                "answers": {
+                    "links": {
+                        "self": "https://data.g2.com/api/v1/survey-responses/177131/relationships/answers",
+                        "related": "https://data.g2.com/api/v1/survey-responses/177131/answers"
+                    }
+                }
+            }
+        }
+    ],
+    "meta": {
+        "record_count": 762,
+        "page_count": 254
+    },
+    "links": {
+        "first": "https://data.g2.com/api/v1/survey-responses?page%5Bnumber%5D=1&page%5Bsize%5D=3",
+        "next": "https://data.g2.com/api/v1/survey-responses?page%5Bnumber%5D=2&page%5Bsize%5D=3",
+        "last": "https://data.g2.com/api/v1/survey-responses?page%5Bnumber%5D=254&page%5Bsize%5D=3"
+    }
+}
