@@ -38,7 +38,7 @@ In today's data-driven world, businesses rely heavily on customer feedback to im
 
 ### Configuration
 1. Obtain an access token for the API.
-2. Create a config.json file in the project directory with the following structure:
+2. Modify the config.json file in the project directory with the following structure:
    ```json
    {
     "API_KEY": "your-api-token-here"
@@ -47,7 +47,7 @@ In today's data-driven world, businesses rely heavily on customer feedback to im
 Replace "your-api-token-here" with your actual API token.
 
 ### Usage
-1. Open main.py and ensure the BASE_URL constant is set to your API endpoint.
+1. Open 'main.py' and ensure the 'BASE_URL' constant is set to your API endpoint.
 2. Execute the main script:
    ```bash
    python main.py
