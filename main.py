@@ -5,7 +5,7 @@ from ctransformers import AutoModelForCausalLM
 def load_api_key():
     with open('config.json', 'r') as config_file:
         config = json.load(config_file)
-        return config.get('API_KEY', None)
+        return config.get('access_token', None)
 
 # Constants
 BASE_URL = "https://data.g2.com/api/v1/survey-responses"
@@ -70,7 +70,7 @@ def generate_features(comment_feedback):
         str: Generated feature sets.
     """
     generated_text = ''
-    for word in LLM('For the following review, generate feature sets(maximum 5 words per point) customers are looking for.'+comment_feedback, stream=True):
+    for word in LLM('For the following review, generate feature sets, in points, customers are looking for(maximum 5 words per point).'+comment_feedback, stream=True):
         generated_text += word
     return generated_text
 
@@ -114,5 +114,5 @@ def main():
     fetch_survey_responses(BASE_URL, HEADERS)
 
 # Execute main function if running as standalone script
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
