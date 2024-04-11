@@ -1,6 +1,6 @@
-# Survey Response Analysis
+# Reviewers_G2_HACKATHON
 
-The **Survey Response Analysis** project is designed to automate the process of fetching, processing, and analyzing survey responses from a data source using an API. The system extracts valuable insights from customer feedback to identify specific feature sets that customers are looking for in various products or services.
+The **Reviewers_G2_HACKATHON** project is designed to automate the process of fetching, processing, and analyzing survey responses from a data source using an API. The system extracts valuable insights from customer feedback to identify specific feature sets that customers are looking for in various products or services.
 
 ## Table of Contents
 
@@ -28,8 +28,8 @@ In today's data-driven world, businesses rely heavily on customer feedback to im
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/survey-response-analysis.git
-   cd survey-response-analysis 
+   git clone https://github.com/your-username/Reviewers_G2_HACKATHON.git
+   cd Reviewers_G2_HACKATHON
 
 2. Install dependencies:
    ```bash
