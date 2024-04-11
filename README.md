@@ -10,7 +10,6 @@ The **Survey Response Analysis** project is designed to automate the process of 
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
