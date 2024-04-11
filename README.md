@@ -7,8 +7,8 @@ The **Survey Response Analysis** project is designed to automate the process of 
 - [Overview](#overview)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Configuration](#configuration)
+- [Usage](#usage)
 - [Contributing](#contributing)
 
 ## Overview
