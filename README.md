@@ -28,7 +28,7 @@ In today's data-driven world, businesses rely heavily on customer feedback to im
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/Reviewers_G2_HACKATHON.git
+   git clone https://github.com/Anirudh2003/Reviewers_G2_HACKATHON.git
    cd Reviewers_G2_HACKATHON
 
 2. Install dependencies:
