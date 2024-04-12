@@ -7,15 +7,15 @@ def load_api_key():
         config = json.load(config_file)
         return config.get('access_token', None)
 
-# Constants
+
 BASE_URL = "https://data.g2.com/api/v1/survey-responses"
 HEADERS = {
     "Authorization": f"Token token={load_api_key()}",
     "Content-Type": "application/vnd.api+json"
 }
 
-# # Load the pretrained language model
-LLM = AutoModelForCausalLM.from_pretrained('TheBloke/Llama-2-7B-Chat-GGML', model_file='llama-2-7b-chat.ggmlv3.q4_K_S.bin')
+#loading slm model
+SLM = AutoModelForCausalLM.from_pretrained('TheBloke/Llama-2-7B-Chat-GGML', model_file='llama-2-7b-chat.ggmlv3.q4_K_S.bin')
 
 
 
@@ -23,11 +23,9 @@ def process_and_summarize_response(response):
     """
     Process a survey response and summarize key information.
 
-    Args:
-        response (dict): Survey response data.
+    Args: Survey response data.
 
-    Returns:
-        dict: Summarized response data.
+    Returns: Summarized response data.
     """
     attributes = response['attributes']
     response_id = response['id']
@@ -37,16 +35,13 @@ def process_and_summarize_response(response):
     comment_answers = attributes['comment_answers']
     secondary_answers = attributes['secondary_answers']
 
-    # Concatenate all comment answers into a single feedback string
+    # Concatenateing all comment answer value fiels
     comment_feedback = ' '.join(answer['value'] for answer in comment_answers.values())
 
-    # Use the language model to generate feature sets
     generated_features = generate_features(comment_feedback)
 
-    # Format secondary answers
     secondary_details = [{value['text']: value['value']} for value in secondary_answers.values()]
 
-    # Create summarized response dictionary
     summarized_response = {
         "ID": response_id,
         "Product Name": product_name,
@@ -61,16 +56,14 @@ def process_and_summarize_response(response):
 
 def generate_features(comment_feedback):
     """
-    Generate positive and negative feature sets using the language model.
+    Generate feature sets using the language model.
 
-    Args:
-        comment_feedback (str): Concatenated comment feedback.
+    Args: Concatenated comment feedback.
 
-    Returns:
-        str: Generated feature sets.
+    Returns:Generated feature sets.
     """
     generated_text = ''
-    for word in LLM('For the following review, generate feature sets, in points, customers are looking for(maximum 5 words per point).'+comment_feedback, stream=True):
+    for word in SLM('For the following review, generate feature sets, in points, customers are looking for(maximum 5 words per point).'+comment_feedback, stream=True):
         generated_text += word
     return generated_text
 
@@ -81,10 +74,7 @@ def fetch_survey_responses(base_url, headers, start_page_number=1):
     """
     Fetch survey responses from the G2 API and process them.
 
-    Args:
-        base_url (str): Base URL for API endpoint.
-        headers (dict): Request headers.
-        start_page_number (int, optional): Starting page number. Defaults to 1.
+    Args: Base URL for API endpoint, Request headers, Starting page number. Defaults to 1.
     """
     page_number = start_page_number
 
@@ -109,10 +99,9 @@ def fetch_survey_responses(base_url, headers, start_page_number=1):
             print(f"Error occurred for page {page_number}: Status Code {response.status_code}")
             break
 
-# Main function to execute the code
+
 def main():
     fetch_survey_responses(BASE_URL, HEADERS)
 
-# Execute main function if running as standalone script
 if __name__ == "__main__":
     main()
