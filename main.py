@@ -30,29 +30,35 @@ def process_and_summarize_response(response):
     attributes = response['attributes']
     response_id = response['id']
     product_name = attributes['product_name']
-    star_rating = attributes['star_rating']
-    title = attributes['title']
-    comment_answers = attributes['comment_answers']
-    secondary_answers = attributes['secondary_answers']
+    if product_name == "G2 Marketing Solutions":
+        star_rating = attributes['star_rating']
+        title = attributes['title']
+        comment_answers = attributes['comment_answers']
+        secondary_answers = attributes['secondary_answers']
 
-    # Concatenateing all comment answer value fiels
-    comment_feedback = ' '.join(answer['value'] for answer in comment_answers.values())
+        # Concatenate all comment answers into a single feedback string
+        comment_feedback = ' '.join(answer['value'] for answer in comment_answers.values())
 
-    generated_features = generate_features(comment_feedback)
+        # Use the language model to generate feature sets
+        generated_features = generate_features(comment_feedback)
 
-    secondary_details = [{value['text']: value['value']} for value in secondary_answers.values()]
+        # Format secondary answers
+        secondary_details = [{value['text']: value['value']} for value in secondary_answers.values()]
 
-    summarized_response = {
-        "ID": response_id,
-        "Product Name": product_name,
-        "Star Rating": star_rating,
-        "Title": title,
-        "Comment Feedback": comment_feedback,
-        "Generated Features": generated_features,
-        "Secondary Answers": secondary_details
-    }
+        # Create summarized response dictionary
+        summarized_response = {
+            "ID": response_id,
+            "Product Name": product_name,
+            "Star Rating": star_rating,
+            "Title": title,
+            "Comment Feedback": comment_feedback,
+            "Generated Features": generated_features,
+            "Secondary Answers": secondary_details
+        }
 
-    return summarized_response
+        return summarized_response
+    else:
+        return None
 
 def generate_features(comment_feedback):
     """
@@ -88,8 +94,8 @@ def fetch_survey_responses(base_url, headers, start_page_number=1):
             for survey_response in data['data']:
                 # print(survey_response)
                 summarized_response = process_and_summarize_response(survey_response)
-                print(json.dumps(summarized_response, ensure_ascii=False, indent=4))
-
+                if summarized_response is not None:
+                    print(json.dumps(summarized_response, ensure_ascii=False, indent=4))
             if 'next' in data['links']:
                 page_number += 1
             else:
