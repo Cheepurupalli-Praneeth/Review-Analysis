@@ -85,7 +85,7 @@ def fetch_survey_responses(base_url, headers, start_page_number=1):
     page_number = start_page_number
 
     while True:
-        url = f"{base_url}?page%5Bnumber%5D={page_number}&page%5Bsize%5D=1"
+        url = f"{base_url}?page%5Bnumber%5D={page_number}&page%5Bsize%5D=100"
         response = requests.get(url, headers=headers)
 
         if response.status_code == 200:
